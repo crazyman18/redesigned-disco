@@ -1,0 +1,106 @@
+/* So, The i didn't add a style but still it can be use and this one is the one i struggle with so yeah */
+body {
+	background-color: lightgoldenrodyellow;
+    margin: 0px;
+    font-family: Verdana, Georgia, serif;
+    font-size: 14px
+}
+.header {
+    background-color: green;
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+}
+.navbar {
+    background-color: orangered;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+}
+.main {
+    background-color: deepskyblue;
+    margin-left: 10px;
+    margin-right: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 100%;
+}
+h1 {
+    font-size: 120%;
+    color: darkgreen;
+}
+p {
+    font-size: 120%;
+    color: green;
+}
+.sideright {
+    background-color: crimson;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 105%;
+    float: right;
+    width: 260px;
+}
+h3 {
+	color: red;
+	text-align: center;
+	border: 5px solid skyblue;
+}
+img {
+	width: 600px;
+    height: auto;
+	border: 5px solid violet;
+}
+iframe {
+	height: 400px;
+	width: 800px;
+	border: 5px solid green;
+}
+a {
+	color: antiquewhite;
+}
+a:hover {
+	color: indianred;
+}
+.logo {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    color: white;
+    border: none;
+}
+.tips {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    color: white;
+    border: none;
+}
+.footer {
+    background-color: green;
+    margin: 10px;
+    height: 60px;
+    clear: both;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 90%;
+}
+/* This one is for side right */
+.minus {
+    color: skyblue;
+}
+.page {
+    color: darkred;
+    text-align: center;
+    font-size: 100px;
+}
+h2{
+    color: red;
+    font: 50px;
+    text-align: center;
+}
