@@ -63,7 +63,7 @@ age = int(input("How old are you?"))
 
 if age <= 12:
   print("You are a child")
-elif age > 12 and age < 20:
+elif age > 12 and age < 20: 
   print("You are a teen")
 elif age < 0 or age > 125:
   print("Invalid age")
@@ -74,3 +74,33 @@ food = input("What is your favorite food?")
 
 if food == "pizza":
   print("Yum!")
+else:
+  print("Yuck")
+
+score = 0
+
+answer = input("What does CPU stand for?")
+if answer == "central processing unit":
+  print("Correct!")
+  score +=1
+else:
+  print("Sorry, wrong answer.")
+  
+answer = input("How many bits are in a byte?")
+if answer == "8":
+  print("Correct!")
+  score +=1
+else:
+  print("Sorry, wrong answer.")
+  
+answer = input("Which is bigger: a kilobyte or a megabyte?")
+if answer == "megabyte":
+  print("Correct!")
+  score +=1
+else:
+  print("Sorry, wrong answer.")
+  
+print("You scored {} points!".format(score))
+
+for i in range(10):
+  print(i)
