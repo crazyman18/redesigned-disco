@@ -102,5 +102,45 @@ else:
   
 print("You scored {} points!".format(score))
 
-for i in range(10):
+for i in range(5):
+  print("Hello")
+
+print("-------- Loop 1 -------")
+
+for i in range(0, 4):
   print(i)
+
+print("-------- Loop 2 -------")
+
+for i in range(1, 7):
+  print(i)
+  
+print("-------- Loop 3 -------")
+
+for i in range(13, 20):
+  print(i) 
+
+print("-------- Your loop -------")
+
+for i in range (7,10):
+  print(i)
+
+i = 1
+while i <= 10:
+  print(i)
+  i += 1
+
+i = 1
+while i < 10:
+  print(i)
+  i += 1
+
+#Example 1
+password = "Hermoso12!"
+
+guess = input("Guess the password: ")
+while guess != password:
+  print("Wrong!")
+  guess = input("Guess the password: ")
+
+print("Correct!")
