@@ -76,3 +76,66 @@ wages = 15.50 * 40
 #Calculate wages based on hourly_rate and hours_worked
 print(wages)
 #Print the result
+
+hourly_rate = 15.50
+hours_worked = 40
+wages = hourly_rate * hours_worked
+print("This week you earned: $" , wages)
+
+#Print some maths statements
+print("9 x 12 =", 9 * 12)
+print("3 - 4 =", 3 - 4)
+print("32 / 8=",32 / 8)
+#Calculating the circumference of a circle
+PI = 3.14159
+diameter = 30
+#Hint: The circumference of a circle is pi times the diameter
+print("The circumference of the circle is:", PI * diameter)
+
+#Calculate wages
+hourly_rate = 15
+hours_worked = 35
+wages = hourly_rate * hours_worked
+#Print out wages
+print("This week you have earned: ${}".format(wages))
+#Print some maths statements
+print("3 x 7 ={}".format(3 * 7))
+print("32 - 16 ={}".format(32 - 16))
+print("256 + 128 ={}".format(256 + 128))
+
+name = input("What is your name?")
+age = input("How old are you?")
+print("Hi {}, {} is nice age to be.".format(name, age))
+
+#Ask the user for personal details
+name = input("What is your name?")
+age = input("How old are you?")
+location = input("Where are you from?")
+#Print summary of input for checking
+print("This is the data you have entered: ")
+print("Name: " + name)
+print("Age: " + age)
+print("Location: " + location)
+
+#Ask user for address details
+house_number = input("What number is your house?")
+street_name = input("What street do you live on?")
+address = house_number + " " + street_name
+#Confirm data with user
+print("Your address is: {}".format(address))
+confirm = input("Are these details correct? Y/N: ")
+
+#Gather favorites data
+fave_color = input("What is your favorite color?")
+fave_food = input("What is your favorite food?")
+fave_music = input("Who is your favorite band/musician?")
+#Combine favorites into a tasty snack e.g. Purple Metallica Pizza
+print("So I guess you would love to have {} {} {} at your next party!".format(fave_color, fave_music, fave_food))
+
+perimeter_of_rectangle = (2 * 32 + 2 * 16)
+print("My hovercraft is full of eels")
+
+import turtle
+tia = turtle.Turtle()
+tia.forward(50)
+
