@@ -139,3 +139,126 @@ import turtle
 tia = turtle.Turtle()
 tia.forward(50)
 
+import turtle
+tia = turtle.Turtle()
+tia.forward(200)
+tia.left(90)
+tia.forward(200)
+tia.left(90)
+tia.forward(200)
+tia.left(90)
+tia.forward(200)
+
+import turtle
+tia = turtle.Turtle()
+tia.pensize(10)
+tia.color("red")
+tia.forward(200)
+tia.left(90)
+tia.color("green")
+tia.forward(200)
+tia.left(90)
+tia.color("yellow")
+tia.forward(200)
+tia.left(90)
+tia.color("blue")
+tia.forward(200)
+
+import turtle
+timmy = turtle.Turtle()
+timmy.pensize(5)
+#Move to first position
+timmy.penup()
+timmy.goto(10, 60)
+timmy.pendown()
+#Draw a purple rectangle, 120 by 50
+timmy.color("purple")
+timmy.forward(120)
+timmy.left(90)
+timmy.forward(50)
+timmy.left(90)
+timmy.forward(120)
+timmy.left(90)
+timmy.forward(50)
+#Move to next position
+timmy.penup()
+timmy.goto(420,60)
+timmy.setheading(0)
+timmy.pendown()
+#Draw an orange triangle with sides that are 60px long
+timmy.color("orange")
+timmy.forward(60)
+timmy.left(120)
+timmy.forward(60)
+timmy.left(120)
+timmy.forward(60)
+
+#Create turtle
+import turtle
+tina = turtle.Turtle()
+tina.color("lightGreen")
+tina.pensize(8)
+#Draw a light green square with yellow fill
+tina.fillcolor("yellow")
+tina.begin_fill()
+tina.forward(200)
+tina.left(90)
+tina.forward(200)
+tina.left(90)
+tina.forward(200)
+tina.left(90)
+tina.forward(200)
+tina.left(90)
+tina.end_fill()
+
+#Glazed donuts cost $3, filled donuts cost $4 and mini donuts cost $2
+#Calculate total cost for order #1: 5 glazed, 3 filled and 6 mini donuts
+order1_cost = 5 * 3 + 3 * 4 + 6 * 2
+#Calculate total cost for order #2: 2 glazed, 1 filled and 10 mini donuts
+order2_cost = 2 * 3 + 1 * 4 + 10 * 2
+#Display order summaries
+print("Order #1 comes to: ${}".format(order1_cost))
+print("Order #2 comes to: ${}".format(order2_cost))
+
+#Glazed donuts cost $3, filled donuts cost $4 and mini donuts cost $2
+glazed_donut = 3
+filled_donut = 4
+mini_donut = 2
+#Calculate total cost for order #1: 5 glazed, 3 filled and 6 mini donuts
+order1_cost = 5 * glazed_donut + 3 * filled_donut + 6 * mini_donut
+#Calculate total cost for order #2: 2 glazed, 1 filled and 10 mini donuts
+order2_cost = 2 * glazed_donut + 1 * filled_donut + 10 * mini_donut
+#Display order summaries
+print("""Order #1 comes to: ${}
+Order #2 comes to: ${}""".format(order1_cost, order2_cost))
+
+# Set up price variables
+ps3_game = 20
+ps4_game = 45
+#Order #1: 1 PS3 game and 2 PS4 games
+order1_price = 1 * ps3_game + 2 * ps4_game
+#Order #2: 4 PS3 games, 3 PS4 games
+order2_price = 4 * ps3_game + 3 * ps4_game 
+#Print out total order costs
+print("Order #1 comes to: ${}".format(order1_price))
+print("Order #2 comes to: ${}".format(order2_price))
+
+# Set up price variables
+ps3_game = 20
+ps4_game = 45
+#Ask for number of each game to be purchased
+num_ps3_games = int(input("How many PS3 games?: "))
+num_ps4_games = int(input("How many PS4 games?: "))
+#Calculate total for each type of game
+ps3_total = num_ps3_games * ps3_game
+ps4_total = num_ps4_games * ps4_game
+#Calculate total cost
+total_cost = ps3_total + ps4_total
+#Print out total order cost
+print("Your order costs: ${}".format(total_cost))
+
+num_pies = 0
+print("Lisa has {} pies".format(num_pies))
+num_pies += 5
+print("Lisa has {} pies".format(num_pies))
+
