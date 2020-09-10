@@ -690,6 +690,7 @@ for i in range(100, -1, -10):
 #Print 3 times table
 for i in range(1, 13):
   print("3 x {0} = {1}".format(i, i*3))
+
 #Set up turtle
 import turtle
 tiny = turtle.Turtle()
@@ -703,17 +704,187 @@ for i in range(4):
 import turtle
 tiny = turtle.Turtle()
 tiny.pensize(5)
-
 #Make a list of colors
 colors = ["red", "yellow", "blue", "green"]
-
 #Draw a square with one side each color using a loop
 for color in colors:
   tiny.pencolor(color)
   tiny.forward(150)
   tiny.right(90)
 
-meron pa
+#Set up turtle
+import turtle
+tiny = turtle.Turtle()
+tiny.pensize(5)
+#Go to position 
+tiny.penup()
+tiny.goto(60, 220)
+tiny.pendown()
+#Draw a red hexagon
+tiny.pencolor("red")
+for i in range(6):
+  tiny.forward(100)
+  tiny.left(60)
+#Go to position
+tiny.penup()
+tiny.goto(360, 220)
+tiny.pendown()
+#Draw a triangle that has a blue line and yellow fill
+tiny.fillcolor("yellow")
+tiny.pencolor("blue")
+tiny.begin_fill()
+for i in range(3):
+  tiny.forward(100)
+  tiny.left(120)
+tiny.end_fill()
+#Go to position
+tiny.penup()
+tiny.goto(200, 440)
+tiny.pendown()
+#Draw a filled pink pentagon
+tiny.fillcolor("pink")
+tiny.pencolor("pink")
+tiny.begin_fill()
+for i in range(5):
+  tiny.forward(100)
+  tiny.left(72)
+tiny.end_fill()
+
+#Set up turtle
+import turtle
+spiro = turtle.Turtle()
+spiro.color("blue")
+#Draw a spirograph
+for i in range(100):
+#Change colors
+  if i == 20:
+    spiro.color("red")
+  if i == 40:
+    spiro.color("orange")
+  if i == 60:
+    spiro.color("yellow")
+  if i == 80:
+    spiro.color("green")
+#Draw the spirograph
+spiro.forward(200)
+spiro.left(184)
+spiro.forward(40)
+spiro.right(30)
+  
+#Set up - always do all imports together at the top of your code
+import random
+import turtle
+spiro = turtle.Turtle()
+spiro.pensize(2)
+spiro.goto(100,250)
+#Change colors
+red = random.randrange(0, 256)
+green = random.randrange(0, 256)
+blue = random.randrange(0, 256)
+spiro.color((red, green, blue))
+#Draw a spirograph
+for i in range(100):
+  spiro.forward(300)
+  spiro.left(184)
+
+#Ask the user's name and greet them
+name = input("What is your name?")
+print("Hello, {}!".format(name))
+
+#Ask the user's name and greet them
+name = input("What is your name?")
+print("Hello, {}!".format(name))
+#Ask the user for number of hours spent online for each of the past 7 days
+for i in range(1, 8):
+  hours = input("How many hours did you spend online on day {}?: ".format(i))
+  print(hours)
+
+#Ask the user's name and greet them
+name = input("What is your name?")
+print("Hello, {}!".format(name))
+total_hours = 0
+#Ask the user for number of hours spent online for each of the past 7 days
+for i in range(1, 8):
+  hours = float(input("How many hours did you spend online on day {}?: ".format(i)))
+  total_hours += hours
+print("You spent {:.1f} hours online in total.".format(total_hours))
+
+#Ask the user's name and greet them
+name = input("What is your name?")
+print("Hello, {}!".format(name))
+total_hours = 0
+lowest_hours = None
+#Ask the user for number of hours spent online for each of the past 7 days
+for i in range(1, 8):
+  hours = float(input("How many hours did you spend online on day {}?: ".format(i)))
+  total_hours += hours  
+#Check if current hours are the lowest hours and store if so
+  if lowest_hours == None or hours < lowest_hours:
+    lowest_hours = hours  
+print("You spent {} hours online in total.".format(total_hours))
+print("The least time you spent online in one day was {:.1f} hours".format(lowest_hours))
+
+#Print numbers 0 - 8
+i = 0
+while i < 9:
+  print(i)
+  i += 1
+# Print "I will practice coding every day!" 5 times
+i = 0
+while i < 5:
+  print("I will practice coding every day!")
+  i += 1
+# Give yourself 3 cheers
+i = 0
+while i < 3:
+  print("Hip hip")
+  print("Hooray")
+  i += 1
+
+#Print numbers 1-5
+i = 1
+while i <= 5:
+  print(i)
+  i += 1
+print()
+#Print numbers 10-25
+i = 10
+while i <= 25:
+  print(i)
+  i += 1
+print()
+#Print numbers 9-18 in a sentence
+i = 9
+while i <= 18:
+  print("The next number is {}".format(i))
+  i += 1
+
+print("------- Loop #1 --------")
+i = 1
+while i <= 128:
+  print(i)
+  i *= 2
+print("------- Loop #2 --------")
+i = 6
+while i <= 21:
+  print(i)
+  i += 3
+print("------- Loop #3 --------")
+i = 10
+while i > 0:
+  print(i)
+  i -= 1
+print("------- Loop #4 --------")
+i = 100
+while i >= 0:
+  print(i)
+  i -= 10
+
+#Print 3 times table
+i = 1
+while i <= 12:
+  print("3 x {} = {}".format(i, i * 3))
+  i += 1
 
 # Set a correct answer
 ANSWER = 9
@@ -828,3 +999,79 @@ while True:
     print("Please enter a valid number!")  
 print("You spent {:.1f} hours exercising today.".format(hours))
 
+#Give the user 5 tries to guess a number
+NUMBER = 4
+GUESSES = 5
+for i in range(GUESSES):
+  print("You have {} guesses left.".format(GUESSES - i))
+  guess = int(input("Guess the number: "))  
+  if guess == NUMBER:
+      print("Yes! That's right!")
+      break
+  else:
+      print("Wrong!")
+else:
+  print("Out of guesses, the answer was {}!".format(NUMBER))
+
+#Ask the user to choose a number between 1 and 10
+number = int(input("Choose a number between 1 and 10: "))
+while number < 1 or number > 10:
+  print("Please enter a number between 1 and 10!")
+  number = int(input("Choose a number between 1 and 10: "))
+print("You chose: {}.".format(number))
+
+#Print "I must do my homework!" 10 times
+i = 0
+while i < 10:
+  print("I must do my homework!")
+  i += 1  
+#Print the numbers 10 to 1 counting down
+i = 10
+while i > 0:
+  print(i)
+  i -= 1
+
+#Ask the user to enter the number of hours sleep they got last night. This should accept values between 0 and 24 inclusive, and force the user to re-enter if they enter invalid data.
+while True:
+  try:
+    sleep_hours = float(input("How many hours sleep did you get last night?"))
+    if sleep_hours < 0 or sleep_hours > 24:
+      print("You can't sleep negative hours, or more than 24 hours in one day!")
+    else:
+      break
+  except ValueError:
+    print("Please enter a number.")
+#Check if they are getting enough sleep
+if sleep_hours >= 12:
+  print("Wow, that's a lot of sleep!")
+elif sleep_hours < 12 and sleep_hours >= 8:
+  print("You got enough sleep last night")
+else:
+  print("You should try to get more sleep!")
+
+#For loop
+for i in range(2, 19):
+  print(i)
+#While loop
+i = 2
+while i < 19:
+  print(i)
+  i += 1
+
+# Ask user to enter sleep data for day 1 through to day 7
+for i in range(1, 8):
+  hours_sleep = int(input("Enter hours of sleep on day {}: ".format(i)))
+  print("Hours of sleep on day {}: {}".format(i, hours_sleep))
+#Print out 1 - 3 times tables
+for i in range(1, 4):
+  for j in range(1, 4):
+    print("{} x {} = {}".format(i, j, i * j))    
+
+#For loop
+maximum = int(input("Pick a number:"))
+for i in range(0, maximum):
+  print(i)
+#While loop
+answer = input("What is the coolest programming language?").strip().lower()
+while answer != "python":
+ answer = input("What is the coolest programming language?").strip().lower()
